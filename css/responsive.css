@@ -172,24 +172,8 @@
 	
 	.header-style-one.fixed-header .header-upper,
 	.header-style-one.fixed-header .header-lower,
-	.header-style-two.fixed-header .header-upper,
-	.header-style-two.fixed-header .header-lower,
-	.header-style-three.fixed-header .header-upper,
-	.header-style-three.fixed-header .header-lower,
-	.header-style-four.fixed-header .header-upper,
-	.header-style-four.fixed-header .header-lower,
-	.header-style-five.fixed-header .header-upper,
-	.header-style-five.fixed-header .header-lower,
 	.header-style-one .header-upper,
-	.header-style-one .header-lower,
-	.header-style-two .header-upper,
-	.header-style-two .header-lower,
-	.header-style-three .header-upper,
-	.header-style-three .header-lower,
-	.header-style-four .header-upper,
-	.header-style-four .header-lower,
-	.header-style-five .header-upper,
-	.header-style-five .header-lower{
+	.header-style-one .header-lower{
 		position: relative !important;
 		margin:0 !important;
 		left: 0 !important;

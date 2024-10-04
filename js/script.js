@@ -106,15 +106,15 @@
       animateIn: "fadeIn",
       loop: true,
       margin: 0,
-      nav: true,
+      // nav: true,
       singleItem: true,
       smartSpeed: 500,
       autoplay: true,
       autoplayTimeout: 6000,
-      navText: [
-        '<span class="fas fa-angle-left"></span>',
-        '<span class="fas fa-angle-right"></span>',
-      ],
+      // navText: [
+      //   '<span class="fas fa-angle-left"></span>',
+      //   '<span class="fas fa-angle-right"></span>',
+      // ],
       responsive: {
         0: {
           items: 1,
@@ -414,69 +414,7 @@
   }
 
   //Contact Form Validation
-  if ($("#contact-form").length) {
-    $("#contact-form").validate({
-      rules: {
-        username: {
-          required: true,
-        },
-        email: {
-          required: true,
-          email: true,
-        },
-        subject: {
-          required: true,
-        },
-        message: {
-          required: true,
-        },
-      },
-    });
-  }
 
-  // Scroll to a Specific Div
-  if ($(".scroll-to-target").length) {
-    $(".scroll-to-target").on("click", function () {
-      var target = $(this).attr("data-target");
-      // animate
-      $("html, body").animate(
-        {
-          scrollTop: $(target).offset().top,
-        },
-        1500
-      );
-    });
-  }
-
-  // Elements Animation
-  if ($(".wow").length) {
-    var wow = new WOW({
-      boxClass: "wow", // animated element css class (default is wow)
-      animateClass: "animated", // animation css class (default is animated)
-      offset: 0, // distance to the element when triggering the animation (default is 0)
-      mobile: false, // trigger animations on mobile devices (default is true)
-      live: true, // act on asynchronously loaded content (default is true)
-    });
-    wow.init();
-  }
-
-  /* ==========================================================================
-   When document is Scrollig, do
-   ========================================================================== */
-
-  $(window).on("scroll", function () {
-    headerStyle();
-  });
-
-  /* ==========================================================================
-   When document is loading, do
-   ========================================================================== */
-
-  $(window).on("load", function () {
-    handlePreloader();
-    sortableMasonry();
-    enableMasonry();
-  });
 })(window.jQuery);
 
 
